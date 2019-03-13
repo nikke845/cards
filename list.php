@@ -2,7 +2,7 @@
 session_start();
 if($_SESSION['username'] == 'username') {
  include "connect.php";
- print("<html>");
+print("<html>");
  $conn = connect_db();
  $sql = "SELECT * FROM Addresses";
  $result = mysqli_query($conn, $sql);
@@ -36,7 +36,11 @@ if($_SESSION['username'] == 'username') {
  print("<input type=\"text\" name=\"zip\">");
  print("<br>");
  print("City: ");
+<<<<<<< HEAD
 print("<input type=\"text\" name=\"city\">");
+=======
+ print("<input type=\"text\" name=\"city\">");
+>>>>>>> parent of 39b63b0... takaisin t3 valmiiseen tulokseen
  print("<br>");
  print("State: ");
  print("<input type=\"text\" name=\"state\">");
